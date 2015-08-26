@@ -10,24 +10,25 @@
 #   - translation filenames have to be changed
 
 # The name of your application
-TARGET = untitled
+TARGET = sailfish-browser-search-engine-manager
 
 CONFIG += sailfishapp
 
-SOURCES += src/untitled.cpp \
-    src/fileutils.cpp
+SOURCES += \
+    src/fileutils.cpp \
+    src/sailfish-browser-search-engine-manager.cpp
 
 HEADERS += src/fileutils.h
 
-OTHER_FILES += qml/untitled.qml \
+OTHER_FILES += qml/sailfish-browser-search-engine-manager.qml \
     qml/cover/CoverPage.qml \
     qml/pages/FirstPage.qml \
     qml/pages/SecondPage.qml \
-    rpm/untitled.changes.in \
-    rpm/untitled.spec \
-    rpm/untitled.yaml \
+    rpm/sailfish-browser-search-engine-manager.changes.in \
+    rpm/sailfish-browser-search-engine-manager.spec \
+    rpm/sailfish-browser-search-engine-manager.yaml \
     translations/*.ts \
-    untitled.desktop \
+    sailfish-browser-search-engine-manager.desktop \
     qml/js/*.js
 
 # to disable building translations every time, comment out the
@@ -38,4 +39,4 @@ CONFIG += sailfishapp_i18n
 # planning to localize your app, remember to comment out the
 # following TRANSLATIONS line. And also do not forget to
 # modify the localized app name in the the .desktop file.
-TRANSLATIONS += translations/untitled-de.ts
+TRANSLATIONS += translations/sailfish-browser-search-engine-manager-de.ts

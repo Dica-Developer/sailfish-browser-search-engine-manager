@@ -34,22 +34,6 @@
         <source>Delete</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <source>Search engine properties</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Name</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Url</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Url with search place holder e.g. https://duckduckgo.com/?q={searchTerms}</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>SecondPage</name>
