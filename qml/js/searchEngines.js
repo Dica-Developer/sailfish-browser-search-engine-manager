@@ -1,8 +1,8 @@
 // sailfish-browser supports this with starting from version 1.2.39
-var SEARCH_ENGINE_USER_PATH = '/home/nemo/.local/share/org.sailfishos/sailfish-browser/searchEngines'
+var SEARCH_ENGINE_USER_PATH = '/home/nemo/.local/share/org.sailfishos/sailfish-browser/searchEngines';
 var DEFAULT_SEARCH_ENGINE_URL = '<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"><ShortName>%shortName%</ShortName><Description></Description>' +
         '<InputEncoding>UTF-8</InputEncoding><LongName></LongName><Url type="text/html" method="get" template="%urlTemplate%"/>' +
-        '</OpenSearchDescription>"'
+        '</OpenSearchDescription>"';
 
 function readAll() {
     var result = [];
@@ -28,7 +28,7 @@ function saveSearchEngine(name, url) {
 
 function deleteSearchEngine(name) {
     var result = false;
-    var fileNameToDelete = SEARCH_ENGINE_USER_PATH + '/' + name + '.xml'
+    var fileNameToDelete = SEARCH_ENGINE_USER_PATH + '/' + name + '.xml';
     if (files.exists(fileNameToDelete)) {
         result = files.unlink(fileNameToDelete);
     } else {
