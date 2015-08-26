@@ -87,8 +87,11 @@ Page {
                     left: parent.left;
                     right: parent.right
                 }
+                errorHighlight: null === text.match('^(http:\/\/|https:\/\/).+$')
+                validator: RegExpValidator {
+                    regExp: /^(http:\/\/|https:\/\/).+$/
+                }
                 label: qsTr("Url");
-                errorHighlight: text.trim() === ''
                 placeholderText: qsTr("Url with search place holder e.g. https://duckduckgo.com/?q={searchTerms}")
                 EnterKey.enabled: text || inputMethodComposing
                 EnterKey.iconSource: "image://theme/icon-m-enter-next"
