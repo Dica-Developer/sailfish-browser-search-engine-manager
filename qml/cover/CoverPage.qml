@@ -36,7 +36,7 @@ CoverBackground {
         id: label
         anchors.centerIn: parent
         text: qsTr("Sailfish browser search engine manager")
+        wrapMode: Text.Wrap
+        width: parent.width
     }
 }
-
-
