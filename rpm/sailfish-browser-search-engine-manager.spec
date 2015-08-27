@@ -16,8 +16,8 @@ Summary:    Browser Search Engine Manager
 Version:    0.9
 Release:    1
 Group:      Qt/Qt
-License:    LICENSE
-URL:        http://example.org/
+License:    GPLv3
+URL:        https://github.com/Dica-Developer/sailfish-browser-search-engine-manager
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  sailfish-browser-search-engine-manager.yaml
 Requires:   sailfishsilica-qt5 >= 0.10.9

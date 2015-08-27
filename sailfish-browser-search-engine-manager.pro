@@ -29,7 +29,8 @@ OTHER_FILES += qml/sailfish-browser-search-engine-manager.qml \
     rpm/sailfish-browser-search-engine-manager.yaml \
     translations/*.ts \
     sailfish-browser-search-engine-manager.desktop \
-    qml/js/*.js
+    qml/js/*.js \
+    LICENSE
 
 # to disable building translations every time, comment out the
 # following CONFIG line

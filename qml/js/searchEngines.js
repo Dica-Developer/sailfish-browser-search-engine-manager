@@ -1,4 +1,24 @@
-// sailfish-browser supports this with starting from version 1.2.39
+/*
+ Copyright (C) 2015 Dica-Developer.
+ Contact: team@dica-developer.org
+ All rights reserved.
+
+ This file is part of sailfish-browser-search-engine-manager.
+
+ sailfish-browser-search-engine-manager is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ sailfish-browser-search-engine-manager is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with sailfish-browser-search-engine-manager.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 var SEARCH_ENGINE_USER_PATH = '/home/nemo/.local/share/org.sailfishos/sailfish-browser/searchEngines';
 var DEFAULT_SEARCH_ENGINE_URL = '<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"><ShortName>%shortName%</ShortName><Description></Description>' +
         '<InputEncoding>UTF-8</InputEncoding><LongName></LongName><Url type="text/html" method="get" template="%urlTemplate%"/>' +
