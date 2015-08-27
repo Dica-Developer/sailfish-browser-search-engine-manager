@@ -23,6 +23,8 @@
 #include <QtQuick>
 #endif
 
+#include <QtQml>
+
 #include <src/fileutils.h>
 
 #include <sailfishapp.h>
