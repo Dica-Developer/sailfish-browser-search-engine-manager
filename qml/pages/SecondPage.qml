@@ -34,6 +34,11 @@ import dicadevelopers.utils.Files 1.0
 import "../js/searchEngines.js" as SearchEngines
 
 Page {
+    property string searchEngineNameText
+    property string searchEngineUrlText
+    property bool isEdit: false
+    property int modelIndex;
+
     // This declaration is necessary for usage of files in searchEngines.js
     Files {
         id: files
@@ -58,6 +63,7 @@ Page {
             }
 
             TextField {
+                text: searchEngineNameText
                 id: searchEngineName
                 errorHighlight: null === text.match('^[a-zA-Z0-9_\-]+$')
                 validator: RegExpValidator {
@@ -82,6 +88,7 @@ Page {
             }
 
             TextField {
+                text: searchEngineUrlText
                 id: searchEngineUrl
                 anchors {
                     left: parent.left;
@@ -99,8 +106,14 @@ Page {
                     if (errorHighlight) {
                         searchEngineUrl.focus = true
                     } else {
-                        if (SearchEngines.saveSearchEngine(searchEngineName.text, searchEngineUrl.text)) {
-                            searchEngineModel.append({"name": searchEngineName.text, "url": searchEngineUrl.text})
+                        if (isEdit) {
+                            SearchEngines.deleteSearchEngine(searchEngineNameText)
+                            searchEngineModel.remove(modelIndex)
+                        }
+                        var textValue = searchEngineName.text.trim()
+                        var urlValue = searchEngineUrl.text.trim()
+                        if (SearchEngines.saveSearchEngine(textValue, urlValue)) {
+                            searchEngineModel.append({"name": textValue, "url": urlValue})
                             pageStack.pop()
                         } else {
                             searchEngineName.focus = true

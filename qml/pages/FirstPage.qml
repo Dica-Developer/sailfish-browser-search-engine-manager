@@ -107,7 +107,7 @@ Page {
                     MenuItem {
                         text: qsTr("Edit")
                         onClicked: {
-                            pageStack.push(Qt.resolvedUrl("SecondPage.qml"), {"searchEngineName.text": name, "searchEngineUrl.text": url})
+                            pageStack.push(Qt.resolvedUrl("SecondPage.qml"), { searchEngineNameText: name, searchEngineUrlText: url, isEdit: true, modelIndex: index })
                         }
                     }
                     MenuItem {
