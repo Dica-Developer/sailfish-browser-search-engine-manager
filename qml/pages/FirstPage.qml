@@ -56,7 +56,6 @@ Page {
             }
         }
 
-
         TouchInteractionHint {
             id: touchInteractionHint
             direction: TouchInteraction.Down
