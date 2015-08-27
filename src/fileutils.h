@@ -37,6 +37,7 @@ public:
     Q_INVOKABLE static bool mkPath(QString filePath);
     Q_INVOKABLE static QStringList find(QString filePath, QString fileNamePattern);
     Q_INVOKABLE static QString read(QString fileName);
+    Q_INVOKABLE static QString getHomeDir();
 
 signals:
 

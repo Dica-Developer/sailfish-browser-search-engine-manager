@@ -81,3 +81,7 @@ QString FileUtils::read(QString fileName) {
 
     return result;
 }
+
+QString FileUtils::getHomeDir() {
+    return QDir::homePath();
+}
