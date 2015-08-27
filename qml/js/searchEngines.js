@@ -29,8 +29,12 @@ function readAll() {
     if (files.exists(SEARCH_ENGINE_USER_PATH)) {
         var foundFiles = files.find(SEARCH_ENGINE_USER_PATH, '*.xml');
         for (var i = 0; i < foundFiles.length; i++) {
+            try {
             var content = files.read(SEARCH_ENGINE_USER_PATH + '/' + foundFiles[i]);
             result.push({"name": content.match('<ShortName>(.+?)</ShortName>')[1], "url": content.match('template="(.+?)"')[1]});
+            } catch (e) {
+                console.log('Error on reading file "'+foundFiles[i]+'". Ignore it.',e);
+            }
         }
     }
     return result;
