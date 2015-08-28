@@ -40,7 +40,7 @@ function readAll() {
 }
 
 function saveSearchEngine(name, url) {
-    var searchEngineXml = getSearchEngineUserPath().replace('%shortName%', name);
+    var searchEngineXml = DEFAULT_SEARCH_ENGINE_URL.replace('%shortName%', name);
     searchEngineXml = searchEngineXml.replace('%urlTemplate%', url);
     if (!files.exists(getSearchEngineUserPath())) {
         files.mkPath(getSearchEngineUserPath());
