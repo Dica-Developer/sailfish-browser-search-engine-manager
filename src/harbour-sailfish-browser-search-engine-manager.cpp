@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
     //   - SailfishApp::pathTo(QString) to get a QUrl to a resource file
     //
     // To display the view, call "show()" (will show fullscreen on device).
-    qmlRegisterType<FileUtils>("dicadevelopers.utils.Files", 1, 0, "Files");
+    qmlRegisterType<FileUtils>("harbour.sailfish.browser.search.engine.manager.dicadevelopers.utils.Files", 1, 0, "Files");
     return SailfishApp::main(argc, argv);
 }
 

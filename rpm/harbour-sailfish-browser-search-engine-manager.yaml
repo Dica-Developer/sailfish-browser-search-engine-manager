@@ -1,4 +1,4 @@
-Name: sailfish-browser-search-engine-manager
+Name: harbour-sailfish-browser-search-engine-manager
 Summary: Browser Search Engine Manager
 Version: 0.9
 Release: 1
@@ -12,7 +12,7 @@ License: GPLv3
 Sources:
 - '%{name}-%{version}.tar.bz2'
 Description: |
-  Short description of my SailfishOS Application
+  Browser Search Engine Manager
 Configure: none
 # The qtc5 builder inserts macros to allow QtCreator to have fine
 # control over qmake/make execution

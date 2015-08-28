@@ -21,7 +21,7 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import dicadevelopers.utils.Files 1.0
+import harbour.sailfish.browser.search.engine.manager.dicadevelopers.utils.Files 1.0
 import "../js/searchEngines.js" as SearchEngines
 
 Page {

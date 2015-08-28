@@ -10,25 +10,26 @@
 #   - translation filenames have to be changed
 
 # The name of your application
-TARGET = sailfish-browser-search-engine-manager
+TARGET = harbour-sailfish-browser-search-engine-manager
 
 CONFIG += sailfishapp
 
 SOURCES += \
     src/fileutils.cpp \
-    src/sailfish-browser-search-engine-manager.cpp
+    src/harbour-sailfish-browser-search-engine-manager.cpp
 
 HEADERS += src/fileutils.h
 
-OTHER_FILES += qml/sailfish-browser-search-engine-manager.qml \
+OTHER_FILES += qml/harbour-sailfish-browser-search-engine-manager.qml \
     qml/cover/CoverPage.qml \
     qml/pages/FirstPage.qml \
     qml/pages/SecondPage.qml \
-    rpm/sailfish-browser-search-engine-manager.changes.in \
-    rpm/sailfish-browser-search-engine-manager.spec \
-    rpm/sailfish-browser-search-engine-manager.yaml \
+    rpm/harbour-sailfish-browser-search-engine-manager.changes.in \
+    rpm/harbour-sailfish-browser-search-engine-manager.spec \
+    rpm/harbour-sailfish-browser-search-engine-manager.spec \
+    rpm/harbour-sailfish-browser-search-engine-manager.yaml \
     translations/*.ts \
-    sailfish-browser-search-engine-manager.desktop \
+    harbour-sailfish-browser-search-engine-manager.desktop \
     qml/js/*.js \
     LICENSE
 
@@ -40,4 +41,4 @@ CONFIG += sailfishapp_i18n
 # planning to localize your app, remember to comment out the
 # following TRANSLATIONS line. And also do not forget to
 # modify the localized app name in the the .desktop file.
-TRANSLATIONS += translations/sailfish-browser-search-engine-manager-de.ts
+TRANSLATIONS += translations/harbour-sailfish-browser-search-engine-manager-de.ts
