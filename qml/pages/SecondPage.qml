@@ -85,9 +85,9 @@ Page {
                     left: parent.left;
                     right: parent.right
                 }
-                errorHighlight: null === text.match('^(http:\/\/|https:\/\/).+$')
+                errorHighlight: null === text.match('^http(s{0,1}):\/\/.+$')
                 validator: RegExpValidator {
-                    regExp: /^(http:\/\/|https:\/\/).+$/
+                    regExp: /^http(s{0,1}):\/\/.+$/i
                 }
                 label: qsTr("Url");
                 placeholderText: qsTr("Url with search place holder e.g. https://duckduckgo.com/?q={searchTerms}")
